@@ -38,11 +38,11 @@ export default function Footer() {
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <Link href="/" aria-label="The Routes — Home" className="inline-block mb-5">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="The Routes — Connecting Every Way"
-                width={160}
-                height={64}
-                className="h-14 w-auto object-contain brightness-0 invert"
+                width={180}
+                height={72}
+                className="h-16 w-auto object-contain"
               />
             </Link>
             <p className="text-white/65 text-sm leading-relaxed max-w-[240px] mb-4">

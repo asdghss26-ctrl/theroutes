@@ -61,11 +61,11 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 group" aria-label="The Routes — Home">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="The Routes — Connecting Every Way"
-                width={160}
-                height={64}
-                className={`h-11 lg:h-14 w-auto object-contain transition-all duration-300 ${transparent ? "brightness-110" : ""}`}
+                width={180}
+                height={72}
+                className={`h-12 lg:h-16 w-auto object-contain transition-all duration-300 ${transparent ? "brightness-110" : ""}`}
                 priority
               />
             </Link>
@@ -169,11 +169,11 @@ export default function Header() {
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="The Routes"
-                width={130}
-                height={52}
-                className="h-10 w-auto object-contain"
+                width={150}
+                height={60}
+                className="h-11 w-auto object-contain"
               />
               <button
                 type="button"
