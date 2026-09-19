@@ -36,12 +36,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand column */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-            <Link href="/" aria-label="The Routes — Home" className="inline-block mb-5">
+            <Link href="/" aria-label="The Routes — Home" className="inline-flex items-center justify-center bg-white/95 p-3.5 rounded-2xl mb-5 shadow-lg">
               <Image
                 src="/logo.png"
                 alt="The Routes — Connecting Every Way"
-                width={180}
-                height={72}
+                width={200}
+                height={80}
                 className="h-16 w-auto object-contain"
               />
             </Link>

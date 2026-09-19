@@ -63,9 +63,9 @@ export default function Header() {
               <Image
                 src="/logo.png"
                 alt="The Routes — Connecting Every Way"
-                width={180}
-                height={72}
-                className={`h-12 lg:h-16 w-auto object-contain transition-all duration-300 ${transparent ? "" : "brightness-0"}`}
+                width={240}
+                height={96}
+                className={`h-16 lg:h-20 w-auto object-contain transition-all duration-300 ${transparent ? "drop-shadow-[0_4px_8px_rgba(255,255,255,0.4)]" : ""}`}
                 priority
               />
             </Link>
@@ -171,9 +171,9 @@ export default function Header() {
               <Image
                 src="/logo.png"
                 alt="The Routes"
-                width={150}
-                height={60}
-                className="h-11 w-auto object-contain brightness-0"
+                width={200}
+                height={80}
+                className="h-14 w-auto object-contain"
               />
               <button
                 type="button"
