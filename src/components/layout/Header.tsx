@@ -65,7 +65,7 @@ export default function Header() {
                 alt="The Routes — Connecting Every Way"
                 width={180}
                 height={72}
-                className={`h-12 lg:h-16 w-auto object-contain transition-all duration-300 ${transparent ? "brightness-110" : ""}`}
+                className={`h-12 lg:h-16 w-auto object-contain transition-all duration-300 ${transparent ? "" : "brightness-0"}`}
                 priority
               />
             </Link>
@@ -173,7 +173,7 @@ export default function Header() {
                 alt="The Routes"
                 width={150}
                 height={60}
-                className="h-11 w-auto object-contain"
+                className="h-11 w-auto object-contain brightness-0"
               />
               <button
                 type="button"
