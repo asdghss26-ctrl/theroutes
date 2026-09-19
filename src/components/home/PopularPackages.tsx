@@ -179,7 +179,7 @@ export default function PopularPackages({
           <div className="text-center mt-10">
             <Link
               href={`/packages${region ? `?region=${encodeURIComponent(region)}` : ""}`}
-              className="inline-flex items-center gap-2 border-2 border-navy text-navy font-semibold px-7 py-3 rounded hover:bg-navy hover:text-white transition-all duration-150"
+              className="inline-flex items-center gap-2 border-2 border-navy text-navy font-semibold px-7 py-3 rounded-lg hover:bg-navy hover:text-white transition-all duration-150"
             >
               See all {filtered.length} packages
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
