@@ -171,7 +171,7 @@ export const destinations: Destination[] = [
     name: "Kanthalloor + Marayoor",
     state: "Kerala",
     image:
-      "https://images.unsplash.com/photo-1543158181-e6f9f6712055?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1601922046914-2b5b3c8d27e7?auto=format&fit=crop&w=1600&q=80",
     shortDescription:
       "Kerala's hidden highlands — apple orchards, natural sandalwood forests, and ancient Neolithic dolmens.",
     longDescription:
@@ -282,7 +282,7 @@ export const destinations: Destination[] = [
     name: "Vagamon + Thekkady",
     state: "Kerala",
     image:
-      "https://images.unsplash.com/photo-1566395724895-9f7a34e91994?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=1600&q=80",
     shortDescription:
       "Misty meadows and wildlife country — a journey through Kerala's interior highlands.",
     longDescription:
@@ -348,7 +348,7 @@ export const destinations: Destination[] = [
     name: "Wayanad",
     state: "Kerala",
     image:
-      "https://images.unsplash.com/photo-1566395724895-9f7a34e91994?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1600&q=80",
     shortDescription:
       "Kerala's green paradise — ancient tribal heritage, dense rainforests, and wildlife.",
     longDescription:
@@ -394,7 +394,7 @@ export const destinations: Destination[] = [
     name: "Mysore + Coorg",
     state: "Karnataka",
     image:
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1600&q=80",
     shortDescription:
       "Heritage city meets Scotland of India — palaces and coffee estates in one journey.",
     longDescription:
@@ -439,7 +439,7 @@ export const destinations: Destination[] = [
     name: "Mysore + Chikmagalur",
     state: "Karnataka",
     image:
-      "https://images.unsplash.com/photo-1590077428593-a55bb07c4665?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1472791108553-c9405341e398?auto=format&fit=crop&w=1600&q=80",
     shortDescription:
       "Palace grandeur to coffee highlands — a Karnataka journey of culture and nature.",
     longDescription:
@@ -505,7 +505,7 @@ export const destinations: Destination[] = [
     name: "Gokarna + Dandeli + Murudeshwar",
     state: "Karnataka",
     image:
-      "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80",
     shortDescription:
       "Karnataka's ultimate coastal-adventure-heritage trail — beaches, rapids, and temples.",
     longDescription:

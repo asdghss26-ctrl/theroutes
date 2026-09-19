@@ -250,7 +250,7 @@ export default function PackagesClient({
       {mobileFiltersOpen && (
         <div className="lg:hidden fixed inset-0 z-40 flex">
           <div className="absolute inset-0 bg-black/50" onClick={() => setMobileFiltersOpen(false)} />
-          <div className="relative ml-auto w-80 max-w-full bg-white h-full overflow-y-auto p-6 shadow-xl">
+          <div className="relative ml-auto w-full max-w-sm bg-white h-full overflow-y-auto p-5 sm:p-6 shadow-xl">
             <div className="flex items-center justify-between mb-6">
               <h2 className="font-bold text-navy text-lg">Filters</h2>
               <button onClick={() => setMobileFiltersOpen(false)} className="text-muted hover:text-navy">
@@ -294,7 +294,7 @@ export default function PackagesClient({
             </div>
 
             {filtered.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
                 {filtered.map((dest) => (
                   <PackageCard
                     key={dest.id}

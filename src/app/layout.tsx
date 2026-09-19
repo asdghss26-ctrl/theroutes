@@ -3,6 +3,7 @@ import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import MobileFloatingCTA from "@/components/layout/MobileFloatingCTA";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,10 +40,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${geistMono.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col antialiased">
+      {/* Extra bottom padding on mobile so content isn't hidden behind floating CTA */}
+      <body className="min-h-full flex flex-col antialiased pb-[56px] lg:pb-0">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <MobileFloatingCTA />
       </body>
     </html>
   );

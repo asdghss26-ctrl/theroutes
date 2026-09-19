@@ -137,7 +137,7 @@ export default function ContactForm() {
         Your Trip Details
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+      <div className="grid grid-cols-1 min-[480px]:grid-cols-2 gap-4 sm:gap-5 mb-5">
         {/* Name */}
         <div>
           <label htmlFor="name" className={labelClass}>
@@ -163,6 +163,7 @@ export default function ContactForm() {
           <input
             id="phone"
             type="tel"
+            inputMode="numeric"
             placeholder="+91 98765 43210"
             value={form.phone}
             onChange={(e) => set("phone", e.target.value)}
@@ -173,7 +174,7 @@ export default function ContactForm() {
         </div>
 
         {/* Email */}
-        <div className="sm:col-span-2">
+        <div className="min-[480px]:col-span-2">
           <label htmlFor="email" className={labelClass}>
             Email <span className="text-orange">*</span>
           </label>
@@ -271,7 +272,7 @@ export default function ContactForm() {
         </div>
 
         {/* Travel Type */}
-        <div className="sm:col-span-2">
+        <div className="min-[480px]:col-span-2">
           <label htmlFor="travelType" className={labelClass}>
             Travel Type
           </label>
@@ -291,7 +292,7 @@ export default function ContactForm() {
         </div>
 
         {/* Message */}
-        <div className="sm:col-span-2">
+        <div className="min-[480px]:col-span-2">
           <label htmlFor="message" className={labelClass}>
             Message
           </label>

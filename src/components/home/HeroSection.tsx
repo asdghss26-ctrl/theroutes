@@ -20,38 +20,38 @@ export default function HeroSection() {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-24 pb-12 lg:pt-32 lg:pb-16">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-24 pb-8 lg:pt-32 lg:pb-16">
         {/* Eyebrow */}
-        <div className="flex items-center gap-2 mb-6 opacity-0 animate-fade-in animation-delay-100">
-          <span className="h-px w-8 bg-orange" />
-          <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase">
+        <div className="flex items-center gap-2 mb-5 sm:mb-6 opacity-0 animate-fade-in animation-delay-100">
+          <span className="h-px w-6 sm:w-8 bg-orange" />
+          <span className="text-orange text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase">
             South India Travel
           </span>
-          <span className="h-px w-8 bg-orange" />
+          <span className="h-px w-6 sm:w-8 bg-orange" />
         </div>
 
         {/* Headline */}
-        <h1 className="text-white font-bold tracking-tight leading-[1.05] mb-5 opacity-0 animate-fade-in-up animation-delay-200">
-          <span className="block text-4xl sm:text-5xl lg:text-7xl">
+        <h1 className="text-white font-bold tracking-tight leading-[1.05] mb-4 sm:mb-5 opacity-0 animate-fade-in-up animation-delay-200">
+          <span className="block text-[2rem] xs:text-4xl sm:text-5xl lg:text-7xl">
             Explore South India,
           </span>
-          <span className="block text-4xl sm:text-5xl lg:text-7xl">
+          <span className="block text-[2rem] xs:text-4xl sm:text-5xl lg:text-7xl">
             <span className="text-white">Your</span>{" "}
             <span className="text-orange">Way.</span>
           </span>
         </h1>
 
         {/* Subheadline */}
-        <p className="text-white/80 text-base sm:text-lg lg:text-xl max-w-2xl leading-relaxed mb-8 opacity-0 animate-fade-in-up animation-delay-300">
-          Curated journeys across Tamil Nadu, Kerala & Karnataka — designed for
-          unforgettable experiences.
+        <p className="text-white/80 text-sm sm:text-base lg:text-xl max-w-xl sm:max-w-2xl leading-relaxed mb-7 sm:mb-8 opacity-0 animate-fade-in-up animation-delay-300 px-2">
+          Curated journeys across Tamil Nadu, Kerala &amp; Karnataka — crafted around
+          your travel style, your pace, your story.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center gap-3 mb-0 opacity-0 animate-fade-in-up animation-delay-400">
+        <div className="flex flex-col xs:flex-row items-center gap-3 mb-0 opacity-0 animate-fade-in-up animation-delay-400 w-full xs:w-auto">
           <Link
             href="/packages"
-            className="inline-flex items-center gap-2 bg-orange text-white font-semibold px-7 py-3.5 rounded hover:bg-orange/90 transition-all duration-150 shadow-lg active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2 bg-orange text-white font-semibold px-6 sm:px-7 py-3.5 rounded-lg hover:bg-orange/90 transition-all duration-150 shadow-lg active:scale-[0.98] text-sm sm:text-base w-full xs:w-auto"
           >
             Explore Packages
             <svg
@@ -67,24 +67,24 @@ export default function HeroSection() {
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white font-semibold px-7 py-3.5 rounded border border-white/30 hover:bg-white/25 transition-all duration-150"
+            className="inline-flex items-center justify-center gap-2 bg-white/15 backdrop-blur-sm text-white font-semibold px-6 sm:px-7 py-3.5 rounded-lg border border-white/30 hover:bg-white/25 transition-all duration-150 text-sm sm:text-base w-full xs:w-auto"
           >
             Plan My Trip
           </Link>
         </div>
 
         {/* Stats strip */}
-        <div className="flex items-center gap-6 sm:gap-10 mt-12 opacity-0 animate-fade-in animation-delay-500">
+        <div className="flex items-center justify-center gap-5 sm:gap-10 mt-10 sm:mt-12 opacity-0 animate-fade-in animation-delay-500">
           {[
             { value: "23+", label: "Destinations" },
             { value: "3", label: "States" },
             { value: "4", label: "Duration Options" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-orange font-bold text-xl sm:text-2xl">
+              <div className="text-orange font-bold text-lg sm:text-2xl">
                 {stat.value}
               </div>
-              <div className="text-white/60 text-xs sm:text-sm">{stat.label}</div>
+              <div className="text-white/60 text-[10px] sm:text-sm">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -95,8 +95,8 @@ export default function HeroSection() {
         <TravelSearch />
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce opacity-60">
+      {/* Scroll indicator — hidden on small screens to avoid overlap */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 animate-bounce opacity-60 hidden sm:block">
         <svg
           width="24"
           height="24"

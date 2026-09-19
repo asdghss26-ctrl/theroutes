@@ -20,6 +20,7 @@
 /* ── Reset & Base ─────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -28,6 +29,15 @@ body {
   font-family: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Prevent layout shifts on mobile */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ── Minimum touch target size ─────────────────────────── */
+button, a, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
 }
 
 /* ── Focus ─────────────────────────────────────────────── */
@@ -96,6 +106,17 @@ body {
   }
 }
 
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -110,6 +131,10 @@ body {
 
 .animate-scale-in {
   animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animation-delay-100 { animation-delay: 100ms; }
@@ -130,6 +155,19 @@ body {
 }
 .gallery-scroll > * {
   scroll-snap-align: start;
+}
+
+/* ── Mobile menu overlay ───────────────────────────────── */
+.mobile-menu-open {
+  overflow: hidden;
+}
+
+/* ── Safe area utilities ───────────────────────────────── */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
 }
 
 /* Reduced motion */
