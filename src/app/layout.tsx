@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import MobileFloatingCTA from "@/components/layout/MobileFloatingCTA";
+import LenisProvider from "@/components/layout/LenisProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,10 +43,12 @@ export default function RootLayout({
     >
       {/* Extra bottom padding on mobile so content isn't hidden behind floating CTA */}
       <body className="min-h-full flex flex-col antialiased pb-[56px] lg:pb-0">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <MobileFloatingCTA />
+        <LenisProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <MobileFloatingCTA />
+        </LenisProvider>
       </body>
     </html>
   );
